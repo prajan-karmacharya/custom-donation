@@ -1,0 +1,41 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.cmm-donation-content .custom-amount-input-wrap.hide {
+    display: none;
+}
+
+#cmm-donation-loading {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    position: relative;
+    top: 2px;
+}
+
+#cmm_donation_submit_button .pointer-none {
+    pointer-events: none;
+}
+
+form#cmm-donation-thankyou {
+    display: block;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}

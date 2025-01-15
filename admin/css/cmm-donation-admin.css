@@ -1,0 +1,178 @@
+    /**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+    
+    .cmm-donation-setting-page-wrap input.large {
+        width: 400px;
+    }
+    
+    #poststuff .cmm_donation_content_heading h2 {
+        padding: 10px 0;
+        color: #1d2327;
+        font-weight: 600;
+        border-bottom: 1px solid #8bc34a;
+        margin-bottom: 20px;
+    }
+    
+    .cmm_donation_form_wrap .form-inner {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    
+    .cmm_donation_form_wrap .form-inner label {
+        border: none;
+        padding: 8px 0;
+        display: inline-block;
+        margin-right: 2px;
+        width: 200px;
+    }
+    
+    .cmm_donation_form_wrap .form-inner .input-text {
+        width: 70%;
+    }
+    
+    .cmm-donation-setting-page-wrap textarea.large {
+        width: 70%;
+        min-height: 300px;
+    }
+    /**
+* Tabs
+*/
+    
+    .tabs {
+        display: flex;
+        margin: 25px 0;
+    }
+    
+    .tabs>ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 17%;
+    }
+    
+    .tabs>ul li {
+        display: block;
+        margin-bottom: 0;
+        outline: none;
+    }
+    
+    .tabs>ul li a,
+    .tabs>ul li a:visited {
+        display: flex;
+        text-decoration: none;
+        background-color: #FFF;
+        color: #3c434a;
+        padding: 1rem 1.5rem;
+        transition: all 0.2s ease-in-out;
+        outline: none;
+        border: 1px solid #8bc34a;
+    }
+    
+    .tabs>ul li a:hover,
+    .tabs>ul li a:focus,
+    .tabs>ul li a:active {
+        outline: none;
+    }
+    
+    .tabs>ul li a.active {
+        background: #8bc34a;
+        color: #FFF;
+    }
+    
+    .tabs section {
+        width: 83%;
+        background-color: #fff;
+        padding: 1rem;
+        display: none;
+        word-wrap: break-word;
+        border: 1px solid #CCC;
+    }
+    
+    .tabs section>* {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.2s, transform 0.2s;
+    }
+    
+    .tabs section.active {
+        display: block;
+    }
+    
+    .tabs section.active-content>* {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .donation-amount-inner a {
+        outline: none;
+    }
+    
+    .donation-amount-inner a.amount-add {
+        margin-right: 20px;
+    }
+    
+    .cmm_donation_shortcode_col,
+    .cmm_donation_shortcode_col:active,
+    .cmm_donation_shortcode_col:focus,
+    .cmm_donation_shortcode_col:hover {
+        border: 0;
+        width: 200px;
+        resize: none;
+        outline: none;
+        pointer-events: none;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+        line-height: 1;
+    }
+    
+    span.cmm-donation-shortcode-copy-success {
+        width: auto;
+        display: inline-block;
+        background: #FFF;
+        position: relative;
+        bottom: -10px;
+        padding: 5px 5px;
+        font-size: 12px;
+        display: none;
+    }
+    
+    .single-donation-amount-wrap.layout-grid .donation-desc,
+    .recurring-donation-amount-wrap.layout-grid .donation-desc,
+    .form-inner.single-other-amount-desc.layout-grid,
+    .form-inner.recurring-other-amount-desc.layout-grid {
+        display: none;
+    }
+    
+    .cmm-donation-report-page-wrap.loading {
+        position: relative;
+    }
+    
+    .cmm-donation-report-page-wrap.loading::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #ccc;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    
+    .cmm-donation-report-page-wrap .spinner-border {
+        display: none;
+    }
+    
+    .cmm-donation-report-page-wrap.loading .spinner-border {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 9;
+        opacity: 1;
+        display: block;
+    }
